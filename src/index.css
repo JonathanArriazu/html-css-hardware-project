@@ -133,6 +133,58 @@
     height: 60vh;
   }
 
+  /* MAS VISITAS */
+  
+  .most-viewed-title {
+    font-size: 3rem !important;
+    color: var(--bs-green);
+  }
+  
+  .text-primary {
+    color: var(--bs-green) !important;
+  }
+  
+  .btn-success {
+    background-color: var(--bs-teal) !important;
+  }  
+  
+  .most-viewed-container .article-photo {
+      border: transparent;
+      box-shadow: 0.3rem 0.3rem 1rem rgb(60 60 60);
+    }
+    
+    .most-viewed-container .article-photo:hover {
+        transform: scale(1.03);
+        transition: 0.4s;
+        box-shadow: 0.5rem 0.5rem 1rem rgb(60 60 60);
+    }
+    
+    .article-info {
+      background-color: #131212;
+      border-radius: 0 3px 3px 0;
+    }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+  }
+
+  .advertising-text-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .advertising-title {
+    color: var(--bs-green) !important;
+  }
+
   /*FOOTER*/
   .footer {
     background-color: #1a1a1a;
@@ -171,6 +223,10 @@
         height: 30vh;
     }
 
+    .advertising-container{
+        margin-top: 3rem;
+    }
+
     .footer-image {
         max-width: 150px;
     }
@@ -189,6 +245,10 @@
     .carousel-item img{
         height: 50vh;
     }
+
+    .advertising-container{
+        margin-top: 3rem;
+    }
     
     .footer-image {
         max-width: 180px;
@@ -204,6 +264,10 @@
     .contact-info-container{
         flex-direction: column;
         align-items: center;
+    }
+
+    .advertising-container{
+        margin-top: 3rem;
     }
     
     .footer-image {
