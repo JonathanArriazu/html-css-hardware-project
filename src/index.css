@@ -127,6 +127,12 @@
     color: white !important;
   }
 
+  /* HERO */
+
+  .carousel-item img{
+    height: 60vh;
+  }
+
   /*FOOTER*/
   .footer {
     background-color: #1a1a1a;
@@ -157,4 +163,70 @@
     display: flex;
     justify-content: start;
     gap: 40px;
+  }
+
+  @media (max-width: 576px) {
+
+    .carousel-item img{
+        height: 30vh;
+    }
+
+    .footer-image {
+        max-width: 150px;
+    }
+
+    .contact-info{
+        margin: 0;
+    }
+
+    .social-items {
+        justify-content: center;
+      }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+
+    .carousel-item img{
+        height: 50vh;
+    }
+    
+    .footer-image {
+        max-width: 180px;
+    }
+
+    .social-items {
+        justify-content: center;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+
+    .contact-info-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-image {
+        max-width: 200px;
+    }
+
+    .social-items {
+        justify-content: center;
+    }
+
+    .carousel-item img{
+        height: 50vh;
+    }
+
+  }
+  
+  @media (min-width: 993px) and (max-width: 1200px) {    
+
+    .carousel-item img{
+        height: 50vh;
+    }
+  }
+  
+  @media (min-width: 1201px) and (max-width: 1400px) {
+
   }
