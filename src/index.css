@@ -29,6 +29,11 @@
     margin: 0;
   }
 
+  .section-title {
+    font-size: 3rem !important;
+    color: var(--bs-green);
+  }
+
   /* HEADER */
   
   nav {
@@ -183,6 +188,59 @@
 
   .advertising-title {
     color: var(--bs-green) !important;
+  }
+
+   /* OFERTAS */
+
+   .card-container{
+    padding: 0;
+   }
+  
+   .col .card {
+    background-color: black;
+    border-color: #303030;
+  }
+  
+  .col .card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 0rem 0.5rem 1rem rgb(60, 60, 60);
+  }
+  
+  .card-offers {
+    background-color: #131212;
+  }
+
+  .card-text {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .card-body a {
+    font-weight: bold;
+    background-color: var(--btn-success) !important;
+    outline: none;
+  }
+  
+  .card-body .btn {
+    outline-style: none;
+    border-color: transparent;
+  }
+
+  .card-title {
+    color: var(--bs-green) !important;
+  } 
+  
+  
+  .badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    background-color: var(--btn-success) !important;
+  }
+  
+  .card-text-span {
+    text-decoration: line-through !important;
   }
 
   /*FOOTER*/
