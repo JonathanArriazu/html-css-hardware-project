@@ -126,3 +126,35 @@
   ::placeholder {
     color: white !important;
   }
+
+  /*FOOTER*/
+  .footer {
+    background-color: #1a1a1a;
+  }
+
+  .footer-image {
+    max-width: 230px;
+}
+  
+  .bgcontainer {
+    background-color: #1a1a1a;
+  }
+  
+  h5 {
+    color: #76b900;
+  }
+  
+  .footercopyrigh {
+    background-color: rgb(19, 18, 18);
+  }
+  
+  .ulredes {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-items {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+  }
