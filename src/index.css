@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --bs-green: #76b900;
+    --bs-teal: #86c000;
+    --btn-success: #86c000;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  body {
+    margin-top: 60px;
+    background-color: black;
+    font-family: "Rubik", sans-serif;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ul{
+    margin: 0;
+  }
+
+  /* HEADER */
+  
+  nav {
+    background-color: #000000;
+    box-shadow: 0rem 0.1rem 0.5rem var(--bs-green);
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: var(--bs-green);
+  }
+  
+  .navbar-toggler {
+    background-color: transparent;
+  }
+  
+  .navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 3px;
+    border: 1px;
+    background: #fff;
+  }
+  
+  .navbar-toggler span + span {
+    margin-top: 5px;
+    width: 22px;
+    margin-left: 0px;
+  }
+  
+  .navbar-toggler span + span + span {
+    width: 22px;
+    margin-left: 0px;
+  }
+  
+  /* MODAL */
+  .form-input input:focus,
+  .form-input input:valid {
+    border: 2px solid #547900;
+  }
+  
+  .btn-close {
+    background-color: #76b900;
+  }
+  
+  .modal-title {
+    text-align: center;
+  }
+  
+  .form-span {
+    color: #76b900;
+  }
+  
+  .modal-body input {
+    background-color: #999999;
+    box-shadow: 5px 3px 10px black;
+  }
+  
+  .datos input {
+    margin-top: 0.5rem;
+  }
+  
+  .label-name1,
+  .label-name2 {
+    width: 25rem;
+  }
+  
+  .label-name2 {
+    margin-left: 1.5rem;
+  }
+  
+  .boton-sub {
+    background-color: #86c000 !important;
+  }
+  
+  .boton-sub:hover {
+    background-color: #547900 !important;
+  }
+  
+  .boton-footer button {
+    border: transparent;
+    box-shadow: 5px 3px 10px black;
+  }
+  
+  .modal-content {
+    background-color: #1a1a1a;
+    box-shadow: 0 0px 9px 2px #76b900;
+  }
+  
+  ::placeholder {
+    color: white !important;
+  }

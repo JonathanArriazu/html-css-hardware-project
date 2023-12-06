@@ -8,6 +8,215 @@
     <link rel="stylesheet" href="./index.css" />
 </head>
 <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <a href="">
+                <img src="/public/images/headerlogo.png" alt="" width="135" height="50"/>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="">Iniciar sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a data-bs-toggle="modal" data-bs-target="#modal_sub" class="nav-link" href="">Suscribirse</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- <section class="registro">
+          <div class="container-fluid">
+            <div
+              class="modal fade"
+              id="modal_sub"
+              tabindex="-1"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              aria-labelledby="subcripcion"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content text-white">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs-3 fw-bold" id="modal_sub">
+                      REGÍSTRO
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body fw-bold">
+                    <form>
+                      <div class="datos d-flex">
+                        <label
+                          for="recipient-name"
+                          class="label-name1 col-form-label"
+                          >Apellido<span class="form-span"> * </span
+                          ><input
+                            type="text"
+                            class="form-control"
+                            id="recipient-name"
+                            placeholder="Apellido"
+                            minlength="2"
+                            maxlength="30"
+                            required
+                        /></label>
+                        <label for="name" class="label-name2 col-form-label"
+                          >Nombre<span class="form-span"> * </span>
+                          <div class="form-input">
+                           <input
+                              type="text"
+                              class="input-name form-control"
+                              id="name"
+                             placeholder="Nombre"
+                             minlength="2"
+                             maxlength="30"
+                             required
+                            />
+                          </div>
+                          </label>
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="col-form-label"
+                          >Email<span class="form-span"> * </span></label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Ej: 123456@gmail.com"
+                          minlength="6"
+                          maxlength="45"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="age" class="col-form-label"
+                          >Edad<span class="form-span"> * </span></label
+                        >
+                        <input
+                          type="age"
+                          class="form-control"
+                          id="age"
+                          placeholder="Ingrese su edad"
+                          minlength="6"
+                          maxlength="45"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="pasword1" class="col-form-label"
+                          >Contraseña<span class="form-span"> * </span></label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="pasword1"
+                          placeholder="Ingrese una contraseña"
+                          minlength="6"
+                          maxlength="45"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="pasword2" class="col-form-label"
+                          >Repetir Contraseña<span class="form-span">
+                            *
+                          </span></label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="pasword2"
+                          placeholder="Repita la contraseña"
+                          minlength="6"
+                          maxlength="45"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <div class="mb-3 form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="exampleCheck1"
+                            required
+                          />
+                          <label class="form-check-label" for="exampleCheck1"
+                            >Acepta los términos y condiciones</label
+                          >
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="exampleCheck2"
+                            required
+                          />
+                          <label class="form-check-label" for="exampleCheck2"
+                            >Acepta recibir novedades por mail</label
+                          >
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="
+                      boton-footer
+                      modal-footer
+                      d-flex
+                      justify-content-center
+                    "
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-danger text-white fw-bold mx-3"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button
+                      type="submit"
+                      class="boton-sub btn btn-primary fw-bold mx-3"
+                    >
+                      Subscribirse
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+      </header>
+
     <script src="../bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
