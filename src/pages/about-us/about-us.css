@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --bs-green: #76b900;
+    --bs-teal: #86c000;
+    --btn-success: #86c000;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  body {
+    background: black;
+    margin-top: 90px;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  /* HEADER */
+  
+  nav {
+    background-color: #000000;
+    border-bottom: 0.5px solid #76b900;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: var(--bs-green);
+  }
+  
+  .navbar-toggler {
+    background-color: transparent;
+  }
+  
+  .navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 3px;
+    border: 1px;
+    background: #fff;
+  }
+  
+  .navbar-toggler span + span {
+    margin-top: 5px;
+    width: 22px;
+    margin-left: 0px;
+  }
+  
+  .navbar-toggler span + span + span {
+    width: 22px;
+    margin-left: 0px;
+  }
+
+  .is-active{
+    color: #76b900;
+  }
+  
+    
+ /*MAIN*/
+.breadcrumb {
+    margin-bottom: 0;
+  }
+  
+  .breadcrumbs-section {
+    background-color: black;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  a:hover {
+    color: #76b900;
+  }
+  
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #76b900;
+  }
+
+  .about-us-img{
+    width: 320px;
+    height: auto;
+  }
+  
+  .team-title {
+    background-color: #1a1a1a;
+  }
+  
+  .team-title h3 {
+    color: #76b900;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  
+  .section-color {
+    background-color: black;
+  }
+  
+  hr {
+    color: #76b900;
+    margin: 0;
+  }
+  
+  p {
+    color: white;
+  }
+  
+  h5 {
+    color: #76b900;
+  }
+  
+  .team {
+    border-radius: 50%;
+    width: 75%;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+  }
+  
+  .description-section {
+    margin-bottom: 20;
+  }
+  
+  /*FOOTER*/
+  .footer {
+    background-color: #1a1a1a;
+  }
+
+  .footer-image {
+    max-width: 230px;
+}
+  
+  .bgcontainer {
+    background-color: #1a1a1a;
+  }
+  
+  h5 {
+    color: #76b900;
+  }
+  
+  .footercopyrigh {
+    background-color: rgb(19, 18, 18);
+  }
+  
+  .ulredes {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-items {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+  }
+  
+  @media (max-width: 576px) {
+    .about-us-img{
+        width: 200px;
+        height: auto;
+    }
+
+    .team {
+        width: 50%;
+    }
+
+    /* FOOTER */
+
+    .footer-image {
+        max-width: 150px;
+    }
+
+    .contact-info{
+        margin: 0;
+    }
+
+    .social-items {
+        justify-content: center;
+      }
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    .about-us-img{
+        width: 250px;
+        height: auto;
+    }
+
+    .team {
+        width: 50%;
+    }
+
+    /* FOOTER */
+    .footer-image {
+        max-width: 180px;
+    }
+
+    .social-items {
+        justify-content: center;
+    }
+  
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .about-us-img{
+        width: 300px;
+        height: auto;
+    }
+    
+
+    /* FOOTER */
+    
+    .footer-image {
+      max-width: 200px;
+    }
+    .contact-info-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-items {
+        justify-content: center;
+    } 
+    
+  }
+  
+  @media (min-width: 993px) and (max-width: 1200px) {
+    
+  }
+  
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    
+  }
+  
