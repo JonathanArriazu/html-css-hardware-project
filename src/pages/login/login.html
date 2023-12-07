@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./contact-us.css" />
+    <link rel="stylesheet" href="./login.css" />
     <title>Contacto</title>
   </head>
   <body>
@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
           <div class="container-fluid">
-            <a href="../../index.html">
+            <a href="/src/index.html">
                 <img src="/public/images/headerlogo.png" alt="" width="135" height="50"/>
             </a>
             <button
@@ -36,16 +36,16 @@
             >
               <ul class="navbar-nav text-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="../login/login.html">Iniciar sesión</a>
+                  <a class="nav-link is-active" href="">Iniciar sesión</a>
                 </li>
                 <li class="nav-item">
                   <a data-bs-toggle="modal" data-bs-target="#modal_sub" class="nav-link" href="">Suscribirse</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../about-us/about-us.html">Sobre nosotros</a>
+                  <a class="nav-link" href="/src/pages/about-us/about-us.html">Sobre nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link is-active" href="../contact-us/contact-us.html">Contacto</a>
+                  <a class="nav-link" href="/src/pages/contact-us/contact-us.html">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -219,77 +219,156 @@
         </section> -->
       </header>
     <main>
-            <section class="section-color">
-        <div class="container p-1 p-sm-3">
-          <div class="row">
-            <div class="col-12">
-              <h2>Contacto</h2>
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/index.html" class="text-decoration-none">Inicio</a></li>
-                <li class="breadcrumb-item active">Contacto</a></li>
-              </ol>
-              <hr>
+
+
+        <div class="container my-5">
+            <div class="row px-3">
+                <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+                    <div class="img-left d-none d-md-flex"></div>        
+                    <div class="card-body">
+                        <h4 class="title text-center mt-4">Inicia sesión con tu cuenta</h4>
+                        <form class="form-box px-3">
+                            <div class="d-flex flex-column gap-4">
+                                <div class="form-input">
+                                    <input
+                                        type="email"
+                                        placeholder="Email Address"
+                                        tabindex="10"
+                                        maxlength="45"
+                                        minlength="6"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-input">
+                                    <input
+                                        type="password"
+                                        placeholder="Password"
+                                        maxlength="30"
+                                        minlength="8"
+                                        required
+                                    />
+                                </div>
+                                <div class="input-field">
+                                    <p>
+                                    <label>
+                                        <input type="checkbox" class="ms-3 filled-in"/>
+                                        <span>Recordarme</span>
+                                    </label>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column align-items-center gap-2 mt-4">
+                                <button type="submit" class="btn btn-block text-uppercase">
+                                    Iniciar sesión
+                                </button>    
+
+                                <div class="modal-recupero text-center">
+                                    <a data-bs-target="#staticBackdrop" data-bs-toggle="modal" href="" class="forget-link"> ¿Olvidaste tu contraseña? </a>
+                                </div>
+    
+                                <div class="d-flex flex-column gap-1 buttons-container text-center w-75">
+                                    <p class="pb-1 m-0">O ingresa con:</p>
+                                    <button class="btn btn-facebook btn-outline-primary w-100 my-1">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-2 d-none d-md-block">
+                                                <img src="/public/images/login/facebook1.png" alt="" width="32">
+                                            </div>
+                                            <div class="col-12 col-md-10 text-center">Facebook</div>
+                                        </div>
+                                    </button>
+                                    <button class="btn btn-google btn-outline-danger w-100 my-1">
+                                        <div class="row align-items-center">
+                                            <div class="col-2 d-none d-md-block">
+                                                <img src="/public/images/login/googlecirculo1.png" alt="" width="32">
+                                            </div>
+                                            <div class="col-12 col-md-10 text-center">Google</div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <hr>
+
+                        <div class="text-center fs-5"><a href="/src/index.html">Volver a Inicio</a></div>
+                    </div>      
+                </div>
             </div>
-          </div>
+
+        <!-- Modal recover password -->
+
+            <div class="modal-recupero">
+                <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-black text-white">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="staticBackdropLabel">
+                                ¿Olvidaste tu contraseña?
+                                </h4>
+                                <button
+                                type="button"
+                                class="btn-close bg-danger m-0"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                                ></button>
+                            </div>
+                            <div class="d-flex flex-column justify-content-start gap-2 modal-body">
+                                <h5 class="body-title">Escribe tu correo:</h5>
+                                <p>Ingrese la dirección de correo electrónico que utilizó para crear su cuenta y le enviaremos el enlace para restablecer su contraseña.</p>
+                                <form class="d-flex flex-column gap-3">
+                                    <div class="form-input">
+                                        <input
+                                            type="text"
+                                            id="recipient-name"
+                                            placeholder="Ej: 123456@outlook.com"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div class="d-flex justify-content-center form-check p-2 align-items-center gap-3">
+                                        <input
+                                            class="input-checkbox"
+                                            type="checkbox"
+                                            class="form-check-input"
+                                            id="exampleCheck1"
+                                            required
+                                        />
+                                        <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+                                        <img
+                                            class="logo-robot"
+                                            alt="logo"
+                                            src="/public/images/Imagen1.png"
+                                        />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                type="button"
+                                class="btn btn-danger text-white fw-bold"
+                                data-bs-dismiss="modal"
+                                >
+                                Cerrar
+                                </button>
+                                <button type="submit" class="submit-button btn text-white fw-bold">
+                                Enviar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-      <div class="container">
-       <h1>Contactanos</h1>
-       <form class="row g-3">
-         <div class="col-md-6">
-           <label for="firstName" class="form-label color-texts">Nombre</label>
-           <input type="text" class="form-control" id="firstName" required />
-         </div>
-         <div class="col-md-6">
-           <label for="lastName" class="form-label color-texts">Apellido</label>
-           <input type="text" class="form-control" id="lastName" required />
-         </div>
-         <div class="col-md-8">
-           <label for="emailInfo" class="form-label color-texts">E-mail</label>
-            <input type="email" class="form-control" id="emailInfo" required />
-         </div>
-          <div class="col-md-4">
-            <label for="phoneNumber" class="form-label color-texts"
-              >Número de telefono</label
-            >
-            <input
-             type="text"
-             class="form-control"
-              id="phoneNumber"
-              placeholder="+54 (381) 425-5309"
-            />
-         </div>
-          <div class="col-md-12">
-           <label for="comments" class="form-label color-texts"
-              >Comentario</label
-           >
-            <textarea
-             class="form-control"
-              id="comments"
-              rows="3"
-              maxlength="500"
-              minlength="30"
-              required
-           ></textarea>
-         </div>
-          <div class="d-flex justify-content-end">
-            <button type="submit" class="btn text-white">Enviar</button>
-          </div>
-       </form>
-     </div>
-     <div class="container d-flex justify-content-center">
-     <div class="mt-5 text-center">     
-     <iframe            
-           class="align-item-center col-xs-12"
-           id="gmap_canvas"
-           src="https://maps.google.com/maps?q=general%20paz%20576,%20argentina%20tucuman%20&t=&z=15&ie=UTF8&iwloc=&output=embed"
-           frameborder="0"
-           scrolling="no"
-           marginheight="0"
-           marginwidth="0"
-          ></iframe>
-           </div>
-           </div>
+           
     </main>
   <!-- FOOTER -->
   <footer>
