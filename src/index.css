@@ -79,9 +79,9 @@
   }
   
   /* MODAL */
-  .form-input input:focus,
-  .form-input input:valid {
+  .form-control:focus {
     border: 2px solid #547900;
+    box-shadow: none;
   }
   
   .btn-close {
@@ -97,21 +97,11 @@
   }
   
   .modal-body input {
-    background-color: #999999;
     box-shadow: 5px 3px 10px black;
   }
   
   .datos input {
     margin-top: 0.5rem;
-  }
-  
-  .label-name1,
-  .label-name2 {
-    width: 25rem;
-  }
-  
-  .label-name2 {
-    margin-left: 1.5rem;
   }
   
   .boton-sub {
@@ -131,9 +121,18 @@
     background-color: #1a1a1a;
     box-shadow: 0 0px 9px 2px #76b900;
   }
-  
-  ::placeholder {
-    color: white !important;
+
+  .subscribe:focus{
+    color:#76b900;
+  }
+
+  .form-check-input:checked {
+    background-color: #76b900;
+    border-color: #76b900;
+  }
+
+  .form-check-input:focus{
+    box-shadow: none;
   }
 
   /* HERO */
